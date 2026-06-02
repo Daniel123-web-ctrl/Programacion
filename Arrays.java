@@ -39,53 +39,6 @@ public class Arrays {
         }
         System.out.printf("%7d %8.2f%n",sumas[i],promedios[i]);
       }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }public static void ejercicio13(Scanner lector){
  
