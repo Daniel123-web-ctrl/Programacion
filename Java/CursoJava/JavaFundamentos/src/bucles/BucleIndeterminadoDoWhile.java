@@ -26,12 +26,6 @@ algún ejercicio desarrollado en alguna tarea previa. */
 base decimal a binario, aplicando el método de divisiones
 sucesivas.*/
 
-
-
-
-
-
-
     }public static void  ejercicio21(Scanner lector){
         /*Una empresa almacena los datos de N empleados ,para esto ,en un proceso repetitivo
         se ingresa el sexo y el salario de cada empleado .Se pide calcular  :
