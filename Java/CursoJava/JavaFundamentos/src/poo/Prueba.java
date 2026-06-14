@@ -2,7 +2,7 @@ package poo;
 
 public class Prueba {
     public static void main(String[] args) {
-        Clase1 obj =new Clase1();
+        Duplicador obj =new Duplicador();
         int num=5;
 
         obj.duplicar(num);
