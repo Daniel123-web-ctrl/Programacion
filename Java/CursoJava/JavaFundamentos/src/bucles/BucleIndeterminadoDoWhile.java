@@ -1,3 +1,4 @@
+package BUCLES;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -8,7 +9,101 @@ public class BucleIndeterminadoDoWhile {
     static final int  NOTAS=3; 
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
-        ejercicio19(lector);
+        ejercicio21(lector);
+
+    }public static void  ejercicio23(Scanner lector){
+/*Implementar 5 programas en Java para:
+• Resolver un problema que utilice una estructura do-while usando un contador progresivo.
+• Resolver un problema que utilice una estructura do-while usando un contador regresivo.
+• Resolver un problema que utilice una estructura do-while usando un acumulador progresivo.
+• Resolver un problema que utilice una estructura do-while usando un acumulador y un
+contador.
+• Elaborar un programa que muestre un menú de 5 opciones y cada opción permita resolver
+algún ejercicio desarrollado en alguna tarea previa. */
+
+    }public static void  ejercicio22(Scanner lector){
+/* Escribir un programa en Java para convertir un número de
+base decimal a binario, aplicando el método de divisiones
+sucesivas.*/
+
+
+
+
+
+
+
+    }public static void  ejercicio21(Scanner lector){
+        /*Una empresa almacena los datos de N empleados ,para esto ,en un proceso repetitivo
+        se ingresa el sexo y el salario de cada empleado .Se pide calcular  :
+        -La cantidad de personas que ganan  mas de 700 al mes
+        -El promedio de salarios
+        -El porcentaje de mujeres que trabajan en esa empresa
+        -El porcentaje de varones que trabajan en esa empresa
+        
+        */
+ int numeroDeEmpleados; 
+double promedioSueldos=0;
+ int contadorSueldoAlto=0,contadorSexoM=0,contadorSexoF=0;
+ String sexo ="";
+int sumaSueldos=0;
+ numeroDeEmpleados =Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de empleados"));
+ 
+ int [] sueldos=new int[numeroDeEmpleados];
+
+for (int i = 0; i < numeroDeEmpleados; i++) {
+    System.out.printf("Ingrese sueldo del empleado %d ",i+1);
+    sueldos[i]=lector.nextInt();
+    if (sueldos[i]>700) {
+ contadorSueldoAlto++;       
+    }
+    System.out.printf("Ingrese sexo del empleado :");
+    sexo =lector.next();
+    if (sexo.equalsIgnoreCase("m")) {
+        contadorSexoM++;
+        
+    }else if(sexo.equalsIgnoreCase("f")){
+        contadorSexoF++;
+    }
+    sumaSueldos +=sueldos[i];
+}
+  promedioSueldos=sumaSueldos/numeroDeEmpleados;
+
+System.out.printf("La cantidad de peronas que ganan sueldo mas de 7000 es %d%n",contadorSueldoAlto);
+System.out.printf("El promedio de sueldos de todos los empleados es : %.2f%n",promedioSueldos);
+System.out.printf("EL porcentaje de las mujeres que trabajan en la empresa es %.2f%n",(double)contadorSexoF/100);
+System.out.printf("EL porcentaje de las varones que trabajan en la empresa es %.2f%n",(double)contadorSexoM/100);
+    }public static void  ejercicio20(Scanner lector){
+/*Hacer un algoritmo  que lea N  consumos  de un restaurante ,
+si el consumo ingresado excede los 70 soles ,el descuento sera de 5%.Muestre todos los pagos hechos  */
+
+   int cantidad;
+double  consumo;
+double descuento =0;
+
+
+cantidad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de consumos que se realizo"));
+    double [] consumos =new double[cantidad];
+
+for (int i = 0; i < cantidad; i++) {
+ 
+    consumo =Double.parseDouble(JOptionPane.showInputDialog(String.format("Ingrese el consumo %d",i+1)));
+ 
+ 
+ if (consumo>70) {
+descuento=consumo*0.05;
+consumo=consumo-descuento;    
+ }
+consumos[i]=consumo;
+ 
+}
+
+String  mensaje ="";
+
+for (int i = 0; i < cantidad; i++) {
+    mensaje +=String.format("El consumo de %d es %.2f pagara : %.2f%n",i+1,consumos[i],consumos[i]);
+    
+}
+JOptionPane.showMessageDialog(null, mensaje);
 
     }public static void  ejercicio19(Scanner lector){
          double promedio=0;
@@ -33,34 +128,6 @@ public class BucleIndeterminadoDoWhile {
             System.out.println("DESAPROBADO");
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }public static void  ejercicio18(Scanner lector){
            double nota =0;
            int contadorAprobado=0;
@@ -83,26 +150,6 @@ public class BucleIndeterminadoDoWhile {
         } while (nota>= 0 && nota<=20 );
           System.out.printf("Alumnos aprobados : %d %n ",contadorAprobado);
           System.out.printf("Alumnos desaprobados : %d %n ",contadorDesaprobado);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
     public static void  ejercicio17(Scanner lector){
@@ -223,35 +270,6 @@ public class BucleIndeterminadoDoWhile {
             }
 
          }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
     public static void  ejercicio16(Scanner lector){
@@ -924,35 +942,7 @@ System.out.printf("Desaprobados %d",desaprobado);
             System.out.printf("El promedio global es %.2f\n",promedio);
             System.out.printf("El numero de aprobados es %d\n",aprobado);
             System.out.printf("El numero de desaprobados es %d\n",desaprobado);
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
     }
     public static void  ejercicio5(Scanner lector){
        int opcion =0;

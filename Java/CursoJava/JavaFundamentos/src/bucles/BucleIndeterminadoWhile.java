@@ -7,8 +7,143 @@ import javax.swing.JOptionPane;
 public class BucleIndeterminadoWhile {
     public static void main(String[] args) {
          Scanner lector =new Scanner(System.in);
-         ejercicio8 (lector);
-    }  public static void ejercicio8 (Scanner lector){
+         ejercicio9(lector);
+    } public static void ejercicio15(Scanner lector){
+/* */
+
+
+
+    } public static void ejercicio14(Scanner lector){
+/*REPORTE ASSCIII
+INGRESAR EMPLEADO
+//      SALARIO
+ EMITIR BOLETA
+SALIR
+Ejercicio 1
+• Escribir un programa para ingresar mediante
+un menú la información de un empleado y
+sus salarios .
+• Opción 1: Se debe pedir el nombre y apellidos
+del empleado, por separado.
+• Opción 2: Se debe ingresar y validar el sueldo
+mensual.
+• Opción 3: Elaborar el reporte ASCII (verificar que
+1 y 2 se hayan realizado antes)
+• Validar nombres y apellidos con Pattern &
+Matcher.\
+ */
+
+
+
+
+
+
+
+    } public static void ejercicio13(Scanner lector){
+/*Actividad grupal para la
+Participación en Clase (PA)
+• Escribir un programa que solicite n
+datos al usuario utilizando el bucle
+while.
+• Escribir un programa que use el
+bucle while para realizar algún
+procesamiento o cálculo.
+• Escribir un programa que utilice el
+bucle while para imprimir
+información en pantalla. */
+
+
+
+    }public static void ejercicio12 (Scanner lector){
+/* Escribir un programa en Java que pida una dirección de
+correo y una clave de acceso. Mostrar “Acceso denegado”
+mientras el correo no cumpla con el formato correcto
+(clases Pattern & Matching) o mientras la clave ingresada
+sea diferente de “P@55w0rd”. Haga uso del bucle while.
+• Si se ingresan las credenciales correctas se mostrará
+“Bienvenido al sistema” y el programa termina.
+• El número máximo de intentos es 5. Si el usuario excede el
+límite se mostrará “Cuenta suspendida” y el programa
+termina.*/
+
+
+
+        
+    }public static void ejercicio11 (Scanner lector){
+
+/*• Escribir un programa en Java que solicite al
+usuario las calificaciones de los estudiantes de
+un curso.
+• El programa termina cuando el usuario ya no
+desea ingresar más notas o cuando ingresa
+una nota igual a -1.
+• Al terminar, deberá mostrar el promedio global,
+así como el número de estudiantes aprobados
+y desaprobados. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }public static void ejercicio10 (Scanner lector){
+/* • Escribir un programa en Java para solicitar un número
+repetidamente mientras este se encuentre entre 1 y 100.
+• Ingresado un valor válido, el programa continúa si el
+usuario responde Sí a “¿Desea continuar? (Sí/No)”. Si
+contesta No, el programa termina.
+• Validar las diferentes respuestas con una expresión
+regular (No, no, NO, si, Si, sí, SÍ, Sí) dentro de un bucle
+while.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }  public static void ejercicio9 (Scanner lector){
+
+    String usuario ="";
+    boolean valido =false;
+   Pattern patronUsuario =Pattern.compile("^U[0-9]{8}$");
+ while (!valido) {
+      usuario=JOptionPane.showInputDialog("Ingrese usuario");
+      Matcher evaluarUsuario =patronUsuario.matcher(usuario);
+      if (evaluarUsuario.matches()) {
+        JOptionPane.showMessageDialog(null, "Bienvenido");
+        valido=true;
+      }else{
+        JOptionPane.showInternalMessageDialog(null, "Usuario incorrecto ,intente nuevamente");
+      }
+ }
+    }public static void ejercicio8 (Scanner lector){
  /*Escribir un programa en Java que solicite un correo electrónico y una contraseña.
          El correo será válido únicamente si termina en “@empresa.com” y la contraseña correcta 
          será “P@55w0rd”.

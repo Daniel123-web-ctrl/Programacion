@@ -1,3 +1,5 @@
+package BUCLES.ARREGLOS;
+import java.rmi.dgc.DGC;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -10,8 +12,45 @@ public class Arrays {
         
         Scanner lector=new Scanner(System.in);
 
-       ejercicio14(lector);
+       ejercicio15(lector);
           
+    }public static void ejercicio15(Scanner lector){
+
+String [ ] nombre = {"JUAN","ANA","ROSA","CARLOS","GABY"};
+int [] edad = {25,24,25,19,22}; 
+int [] grado ={5,5,5,5,4};
+int[][] notas ={
+    {20,17,18,16},
+    {16,18,15,12},
+    {20,20,14,15},
+    {20,19,15,17},
+    {20,18,12,13},
+        };
+double [] promedios=new double[5] ;
+double sumatotal=0;
+double promediTotal=0.0;
+ StringBuilder reporte=new StringBuilder();
+
+reporte.append("#".repeat(20)+" REPORTE DE NOTAS "+"#".repeat(20)+"\n");
+reporte.append(String.format("%-22S%-5s%-7s%-5s%-5s%-5s%-5s%-5s%n","NOMBRE","EDAD","GRADO","PC1","PC2","PC3","EF","PROM"));
+reporte.append("#".repeat(60)+"\n");
+sumatotal=0;
+for (int i = 0; i < nombre.length; i++) {
+    promedios[i]=(notas[i][0]+notas[i][1]+notas[i][2]+notas[i][3])/4.0;
+    reporte.append(String.format("%-22s%-5d%-7d%-5d%-5d%-5d%-5d%-5.2f%n",nombre[i],edad[i],grado[i],notas[i][0],notas[i][1],notas[i][2],notas[i][3],promedios[i]));
+    sumatotal +=promedios[i];
+   
+}
+
+promediTotal =(double)sumatotal/nombre.length;
+reporte.append("#".repeat(60)+"\n");
+
+reporte.append(String.format("PROMEDIO TOTAL : "+" ".repeat(37)+"%.2f",promediTotal)+"\n");
+
+reporte.append("#".repeat(60)+"\n");
+
+System.out.println(reporte);
+
     }public static void ejercicio14(Scanner lector){
        int [][] matriz =new int[5][7]; 
        double [] promedios = new double[7];
@@ -39,7 +78,6 @@ public class Arrays {
         }
         System.out.printf("%7d %8.2f%n",sumas[i],promedios[i]);
       }
-
     }public static void ejercicio13(Scanner lector){
  
 /*Registrar las temperaturas de 4 ciudades durante 7 días en una matriz 4x7.
