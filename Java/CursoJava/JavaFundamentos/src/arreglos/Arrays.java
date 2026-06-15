@@ -1,4 +1,4 @@
-package BUCLES.ARREGLOS;
+package arreglos;
 import java.rmi.dgc.DGC;
 import java.util.Scanner;
 

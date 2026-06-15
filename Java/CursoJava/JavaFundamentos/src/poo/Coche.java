@@ -46,8 +46,7 @@ public class Coche {
      public  String  isClimatizador() {
         if (climatizador)   return "El coche incorpora climatizador";    // if (climatizador==true) 
         else return "El coche incorpora aire acondicionado";
-            
-        
+      
     }
      public void setClimatizador(String climatizador) {
         if (climatizador.equalsIgnoreCase("si"))  this.climatizador = true;    //this  es para referirte a  al climatizador campo de clasea

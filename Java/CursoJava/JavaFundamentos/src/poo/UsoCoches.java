@@ -9,10 +9,6 @@ public class UsoCoches {
        System.out.println(coche1.getColor());
        System.out.println(coche1.getPeso());
 
-
-
-
-
     }
 
 }
