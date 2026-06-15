@@ -3,7 +3,7 @@ package poo;
 
 
 public class Coche {
-    //Constructor ,le da un estdo inicial en este caso a ruedas
+    //Constructor ,le da un estado inicial en este caso a ruedas ,color ,etc
     public Coche(){
  
         ruedas =4;
