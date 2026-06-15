@@ -17,3 +17,4 @@ public Empleado(String nom,double sue,int agno,int mes ,int dia ){
 }
 
 }
+
