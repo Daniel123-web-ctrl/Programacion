@@ -7,9 +7,9 @@ public class Empleado {
     private String cargo ;
     private double horasTrabajadas ;
     private double pagoPorHora ;
-    private String activo ;
+    private boolean activo ;
     
-    public Empleado(String codigo,String nombre,String cargo,double horasTrabajadas,double pagoPorHora,String activo){
+    public Empleado(String codigo,String nombre,String cargo,double horasTrabajadas,double pagoPorHora,boolean activo){
 
         this.codigo=codigo;
         this.nombre=nombre;
@@ -26,20 +26,59 @@ public class Empleado {
         return horasTrabajadas*pagoPorHora;
         
     }
-    
+     
+    public double calcularBono(){
+        if(horasTrabajadas>=45){
+            return 200;
+        }else if(horasTrabajadas>35 && horasTrabajadas<45){
+            return 100;
 
+        }else{
+            return 0;
+        }
+    }
 
+    public double calcularDescuentoAFP(){
+        return -calcularSueldoBruto()*0.13;
 
+    }
 
+    public double calcularSueldoNeto(){
+        return calcularSueldoBruto()+calcularBono() -calcularDescuentoAFP();
+    }
 
+    public String obtenerCategoria(){
+        if (calcularSueldoNeto()>=3000) {
+            return "Senior";
+            
+        }else if (calcularSueldoNeto()>=1800 ){
+            return "Semi Senior";
 
+        }else{
+            return "Junior";
+        }
+    }
+      
+    public boolean puedeAscender(){
+        if (obtenerCategoria().equalsIgnoreCase("Senior") ) {
+            
+            return true;
+            
+        }else{
+            return false;
+        }
 
+    }
 
-
-
-
-
-
+    public String mostrarDatos(){
+        StringBuilder reporte=new StringBuilder();
+        reporte.append(String.format("%-5s  %-5s  %-5s    %-5s  %-5s    %-5s    %-5s    %-5s  %-5s  %n"
+        ,"CODIGO","NOMBRE","CARGO","HORAS","BRUTO","BONO","AFP","NETO","CATEGORIA"));
+        reporte.append(String.format("%-5s   %-5s  %-5s  %-5.0f  %-5.0f  %-5.2f  %-5.2f   %-5.2f  %-5s %n"
+        ,getCodigo(),getNombre(),getCargo(),getHorasTrabajadas(),calcularSueldoBruto(),calcularBono(),calcularDescuentoAFP(),calcularSueldoNeto(),obtenerCategoria(),puedeAscender()));
+        
+        return reporte.toString();
+    }
 
 
 
@@ -95,11 +134,11 @@ public class Empleado {
 
     
 
-    public String getActivo() {
+    public boolean isActivo() {
         return activo;
     }
 
-    public void setActivo(String activo) {
+    public void setActivo(boolean activo) {
         this.activo = activo;
     }
 
