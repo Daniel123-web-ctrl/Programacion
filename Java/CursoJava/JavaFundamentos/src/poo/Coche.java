@@ -104,19 +104,14 @@ public class Coche {
 
 
 
-     public double getPrecio() {
-        return precio;
-    }
-     private void setPrecio(double precio) {
-         this.precio = precio;
+     
 
 
 
 
 
 
-
-     }
+     
      public double getAncho() {
         return ancho;
     }

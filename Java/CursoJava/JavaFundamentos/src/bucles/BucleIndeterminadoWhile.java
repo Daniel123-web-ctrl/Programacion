@@ -1,3 +1,4 @@
+package bucles;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -436,7 +437,7 @@ while (!valido) {
         do{
             
             System.out.println("ingrese dos");
-         int numero=2;
+         
 
 
         }while(!salir);

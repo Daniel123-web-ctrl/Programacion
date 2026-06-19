@@ -1,4 +1,4 @@
-package MOUREDEV;
+package colecciones;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class List {
         
   //Delaracion y creacion
   ArrayList<String> names =new ArrayList<>();
-  var numbers  =new ArrayList<Integer>();
+ // var numbers  =new ArrayList<Integer>();
 
   //tamano
   System.out.println(names.size()); //0

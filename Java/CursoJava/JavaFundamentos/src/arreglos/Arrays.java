@@ -1,8 +1,8 @@
 package arreglos;
-import java.rmi.dgc.DGC;
+
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 public class Arrays {
     

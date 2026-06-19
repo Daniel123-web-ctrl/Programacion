@@ -178,10 +178,10 @@ JOptionPane.showMessageDialog(null, mensaje);
                     switch (opcion) {
                         case 1:{
 
-                            String []nombre={"laptop","teclado","mouse"};
-                            int [] cantidad ={1,2,3};
-                            int[]precio ={1000000,300,200};
-                            int []total =new int[3];
+                           // String []nombre={"laptop","teclado","mouse"};
+                            //int [] cantidad ={1,2,3};
+                            //int[]precio ={1000000,300,200};
+                            //int []total =new int[3];
 
 
                         }
@@ -204,7 +204,7 @@ JOptionPane.showMessageDialog(null, mensaje);
                             int[]precio ={1000000,300,200};
                             int []total =new int[3];
                             
-        
+        System.out.println(igv);
                             factura.append("=".repeat(60)+"\n");
                             factura.append(String.format("%-20s%-10s%-10s%-10s\n","NOMBRE","CANTIDAD","PRECIO","TOTAL"));
                             factura.append("=".repeat(60)+"\n");
@@ -269,6 +269,7 @@ JOptionPane.showMessageDialog(null, mensaje);
     public static void  ejercicio16(Scanner lector){
         boolean finalizar=true;
         double promedio=0,suma=0 , monto=0 ,acumulador=0;
+        System.out.println(suma);
         int contador=0;
         while(!finalizar){
             System.out.println("Ingrese el monto de venta realizada");
@@ -330,6 +331,7 @@ JOptionPane.showMessageDialog(null, mensaje);
  int numero=0;
 Pattern patronExpresion=Pattern.compile("^[a-z]{2}=[1-9]$");
 
+System.out.println(numero);
 
  do{
 System.out.println("Ingrese la expresion");
@@ -867,7 +869,7 @@ while(!valido){
 int nota =0 ,contador=1 ,aprobado=0 , desaprobado =0;
 double promedio =0 ,suma =0;
 boolean valido =true;
-
+System.out.println(valido);
 while(valido=true ){
     System.out.println("Ingrese una nota (0-20)");
     nota=lector.nextInt();

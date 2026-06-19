@@ -14,7 +14,7 @@ public class MainPersona {
         Boolean valido=false;
         Pattern patronDNI=Pattern.compile("^[0-9]{8}$");
         Scanner lector =new Scanner(System.in);
-
+System.out.println(lector);
 
        System.out.println(persona1.getNombre());
         

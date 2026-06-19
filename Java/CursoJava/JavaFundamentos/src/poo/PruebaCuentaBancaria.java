@@ -12,7 +12,7 @@ public class PruebaCuentaBancaria {
           CuentaBancaria cuenta1= new CuentaBancaria("12345","Juan", 1000);
           CuentaBancaria cuenta2=new CuentaBancaria("54321", "Lucas", 3000);
           CuentaBancaria cuenta3=new CuentaBancaria("6789", "Dani", 10000);
-          
+          System.out.println(lector);
 
           
           do {

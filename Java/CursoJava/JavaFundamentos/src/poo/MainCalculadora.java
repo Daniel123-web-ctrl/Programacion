@@ -9,6 +9,7 @@ public class MainCalculadora {
         int numero2;
         int opcion;
         int resultado=0;
+        System.out.println(lector);
 
         System.out.println("Ingrese el primero numero");
         numero1=lector.nextInt();

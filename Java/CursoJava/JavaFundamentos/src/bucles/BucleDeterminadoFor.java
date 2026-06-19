@@ -19,7 +19,9 @@ public class BucleDeterminadoFor {
     int turnos ,numeroClientes,tipoBoleta;
     final int GENERAL= 20, ESTUDIANTE= 10,VIP= 50;
     int recaudacion=0 ,recaudacionTotal=0,recaudacionFinal=0;;
-    int contador1=0,contador2=0,contador3=0;
+    int contador1=0;
+    int contador2=0;
+    int contador3=0;
 System.out.println("Ingrese la cantidad de turnos");
 turnos=lector.nextInt();
 
@@ -62,6 +64,10 @@ recaudacionTotal +=recaudacion;
     recaudacionFinal +=recaudacionTotal;
 }
 System.out.printf("%d%n",recaudacionFinal);
+System.out.println(contador1);
+System.out.println(contador2);
+System.out.println(contador3);
+System.out.println(reporte);
 
 }public static void ejercicio13(Scanner lector){
 /*Actividad para la
@@ -153,16 +159,6 @@ mostrados.
 • Utilizar String.format() para acumular en
 una cadena la serie de números a
 mostrar. */
-int N ;
-int acumulador =0;
-int nuevoNumero=0;
-int suma=0;
-System.out.println("Ingrese la cantidad de numeros que desee mostrar");
-N=lector.nextInt();
-for (int i = 0; i <N; i++) {
-
-
-}
 
     }public static void ejercicio10(Scanner lector){
 /*ver for ii• Elaborar un programa que permita ingresar
@@ -178,7 +174,7 @@ hayan sido ingresados)
 Almacene el reporte en una variable String. */
 
 
-int salario=0,cantBoletas=0,numeroMes=0;
+int salario=0,cantBoletas=0;
 boolean opciones=true;
  int opcion;
  String tipoEmpleado="";
@@ -215,7 +211,7 @@ do {
             System.out.println("Ingrese la cantidad de boletas emitidas");
             cantBoletas=lector.nextInt();
             System.out.println("Ingrese el numero de mes en curso (0-12)");
-            numeroMes=lector.nextInt();
+            //numeroMes=lector.nextInt();
         }
             
             break;

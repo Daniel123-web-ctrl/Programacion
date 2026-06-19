@@ -1,4 +1,4 @@
-package MOUREDEV;
+package colecciones;
 import java.util.HashMap;
 
 public class Maps {
@@ -6,7 +6,7 @@ public class Maps {
          
         //Delaracion y creacion
   HashMap<String,String> names =new HashMap<>();
-  var numbers  =new HashMap<Integer,String>();
+  //var numbers  =new HashMap<Integer,String>();
 
   //tamano
   System.out.println(names.size()); //0

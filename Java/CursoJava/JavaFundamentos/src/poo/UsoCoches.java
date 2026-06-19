@@ -6,8 +6,8 @@ public class UsoCoches {
         Coche coche1=new Coche();
         
         coche1.setAsientosCuero("si");
-        System.out.println(coche1.isAsientosCuero()|);
-       System.out.println(coche1.getPrecio());
+        System.out.println(coche1.isAsientosCuero());
+       //System.out.println(coche1.getPrecio());
        //coche1.setColor("morado");
        //System.out.println(coche1.getColor());
        coche1.setClimatizador("si");
