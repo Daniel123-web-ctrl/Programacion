@@ -1,5 +1,7 @@
 package poo;
 
+import java.time.LocalDate;
+
 public class MainEmpleado {
     public static void main(String[] args) {
         //double AFP;
@@ -9,8 +11,8 @@ public class MainEmpleado {
         empleado1.mostrarDatos();
         System.out.println(empleado1.mostrarDatos());
        
-        
-
+        LocalDate fecha = LocalDate.now();
+System.out.println(fecha);
 
 
 
