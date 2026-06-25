@@ -1,114 +1,105 @@
 package poo;
 
 public class CuentaBanco {
-private String numero;
-    private String tipo;   //Simple ,Double, Suite
-     private double precioDia ;
-      private double diasHospedaje;
-     private boolean ocupada;
 
-public CuentaBanco(String numero,String tipo,int diasHospedaje,double precioDia,boolean ocupada){
-
-    this.numero=numero;
-    this.tipo=tipo;
-    this.diasHospedaje=diasHospedaje;
-    this.precioDia=precioDia;
-    this.ocupada=ocupada;
-}
-
-public double calcularCostoBase(){
-    return precioDia*diasHospedaje;
-}
-
-public double calcularDescuento(){
-    if(diasHospedaje> 10){
-        return 0.2*calcularCostoBase();
-    }else if(diasHospedaje>=5 ){
-
-        return 0.1*calcularCostoBase();
-    }else{
-        return 0;
-
-    }
-}
-
-public double calcularImpuesto(){
-    return 0.18*calcularCostoBase();
-}
-  public double calcularTotal(){
-    return (calcularCostoBase()-calcularDescuento())+calcularImpuesto();
-  }
+private String numeroCuenta;
+private String nombreTitular;
+private double saldoDisponible;
+private static double comision=5;
+private static int totalOperacion;
+private double montoDeposito;
+private double montoRetiro;
+private static int totalCuentas = 0;
 
 
-public String  obtenerCategoria(){
-    if (calcularTotal() >=3000 ) {
-     return "Premium"  ;     
-    }else if (calcularTotal()>=1500 && calcularTotal() <3000){
-        return "Ejecutiva";
 
-    }else{
-       return "Economica";
-    }
-}
+public CuentaBanco (String numeroCuenta,String nombreTitular,double saldoDisponible,double montoDeposito,double montoRetiro){
 
- public boolean estaDisponible(){
-    if (ocupada ==false) {
-        return true;
-        
-    }else{
-        return false;
-    }
-
- }
-
-  public String mostrarDatos(){
-   return String.format("Numero de habitacion : %s %n Tipo de habitacion : %s %nDias de hospedaje :%.2f %nPrecio por dia :%.2f %nTotal a pagar :%.2f%nCategoria : %s%nDisponible : %b %n",
-    getNumero(),getTipo(),getDiasHospedaje(),getPrecioDia(),calcularCostoBase(),obtenerCategoria(),estaDisponible());
-
-  }
-
-
-public String getNumero() {
-        return numero;
-    }
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-
+     this.numeroCuenta=numeroCuenta;
+     this.nombreTitular=nombreTitular;
+     this.saldoDisponible=saldoDisponible;
+     this.montoDeposito=montoDeposito;
+     this.montoRetiro=montoRetiro;
     
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 
-    public double getDiasHospedaje() {
-        return diasHospedaje;
-    }
+    totalCuentas++;
 
-    public void setDiasHospedaje(int diasHospedaje) {
-        this.diasHospedaje = diasHospedaje;
-    }
+}
 
-    public double getPrecioDia() {
-        return precioDia;
-    }
+public double realizarDeposito(){
+    
+
+return saldoDisponible+montoDeposito;
 
 
-    public void setPrecioDia(double precioDia) {
-        this.precioDia = precioDia;
-    }
+}
 
-public boolean isOcupada() {
-        return ocupada;
-    }
+public double realizarRetiro(){
+    
+    return  realizarDeposito()- (montoRetiro + comision);
+    
+}
+public double verSaldoFinal(){
+
+return realizarRetiro();
+
+}
+public static int getTotalCuentas() {
+    return totalCuentas;
+}
+
+
+public String verCuenta(){
+
+ return String.format(
+           "Numero de cuenta         :  %s%n"+
+           "Titular                  :  %s%n"+ 
+           "Saldo disponible Final   :  %.2f%n",numeroCuenta,nombreTitular,verSaldoFinal());
+}
+
+public static int getTotaOperaciones(){
+
+ return totalOperacion;
+
+}
+
+public String getNumeroCuenta() {
+    return numeroCuenta;
+}
+public void setNumeroCuenta(String numeroCuenta) {
+    this.numeroCuenta = numeroCuenta;
+}
+
+public String getNombreTitular() {
+    return nombreTitular;
+}
+public void setNombreTitular(String nombreTitular) {
+    this.nombreTitular = nombreTitular;
+}
+
+public double getSaldoDisponible() {
+    return saldoDisponible;
+}
+public void setSaldoDisponible(double saldoDisponible) {
+    this.saldoDisponible = saldoDisponible;
+}
+public double getMontoDeposito() {
+    return montoDeposito;
+}
+
+public void setMontoDeposito(double montoDeposito) {
+    this.montoDeposito = montoDeposito;
+}
+
+public double getMontoRetiro() {
+    return montoRetiro;
+}
+
+public void setMontoRetiro(double montoRetiro) {
+    this.montoRetiro = montoRetiro;
+}
 
 
 
 
-    public void setOcupada(boolean ocupada) {
-        this.ocupada = ocupada;
-    }
 }
