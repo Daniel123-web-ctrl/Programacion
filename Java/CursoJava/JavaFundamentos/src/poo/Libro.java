@@ -15,26 +15,37 @@ public class Libro {
         this.titulo=titulo;
         this.autor=autor;
         this.cantidadDisponible=cantidadDisponible;
-        
-        totalLibros ++;
-    }
-
-    public int prestarLibro(){
-        if (cantidadDisponible < 3) {
-            System.out.println("No se puede prestar mas libros de lo disponible");
-            return 0;
-            
-        }else{
-            return cantidadDisponible-3;
-        }
+         totalLibros += cantidadDisponible;
         
     }
 
-    public int devolverLibro(){
-        return cantidadDisponible +1;
+    public  void prestarLibro(int prestamo){
+
+        cantidadDisponible -=prestamo;
+        totalLibros-=prestamo;
+
+    }
+    
+    public  void devolverLibro(int devolucion){
+
+        cantidadDisponible +=devolucion;
+         totalLibros +=devolucion;
     }
 
+public static int verTotalDeLibros(){
+    return totalLibros;
+}
 
+    public String mostrarInformacion(){
+
+        return String.format(
+               "Codigo            :%s%n"+
+               "Titulo            :%s%n"+
+               "Autor             :%s%n"+
+               "Cantidad          :%d%n",
+            codigo,titulo,autor,cantidadDisponible);
+
+    }
 
 
     public String getCodigo() {
@@ -58,19 +69,13 @@ public class Libro {
         this.autor = autor;
     }
     
-    public String getCantidaDisponible() {
-        return cantidaDisponible;
+   public int getCantidadDisponible() {
+        return cantidadDisponible;
     }
-    public void setCantidaDisponible(String cantidaDisponible) {
-        this.cantidaDisponible = cantidaDisponible;
+
+    public void setCantidadDisponible(int cantidadDisponible) {
+        this.cantidadDisponible = cantidadDisponible;
     }
     
-    
-    public static String getTotalLibros() {
-        return totalLibros;
-    }
-    public static void setTotalLibros(String totalLibros) {
-        Libro.totalLibros = totalLibros;
-    }
 
 }

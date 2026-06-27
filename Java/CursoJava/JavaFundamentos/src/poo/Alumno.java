@@ -1,5 +1,7 @@
 package poo;
 
+import java.util.Scanner;
+
 public class Alumno {
      private String nombre;
      private int edad;
@@ -18,6 +20,58 @@ public class Alumno {
         this.EF=EF;
         
 
+Scanner lector=new Scanner(System.in);
+int cantidadAccidentes;
+
+    int cantidadConductores;
+    String nombre="";
+    int codigoEmpleado;
+    double horasTrabajadasMes;
+    double kilometrajeRecorrido;
+    int saldoBonificacion ;
+    double sueldoBase;
+    int zonaDistribucion;
+
+System.out.println("Ingrese la cantidad de conductores a evaluar :");
+cantidadConductores=lector.nextInt();
+
+int [] conductores=new int[cantidadConductores];
+
+for (int i = 0; i < conductores.length; i++) {
+    System.out.println("Ingrese su nombre :");
+    nombre=lector.next();
+    
+    do {
+        System.out.println("Ingrese su codigo : ");
+    codigoEmpleado=lector.nextInt();
+    if (codigoEmpleado <0) {
+        System.out.println("Error :CODIGO NO VALIDO !!");
+    }
+
+    } while (codigoEmpleado < 0);
+
+    System.out.println("Ingrese las horas totales trabajadas en el mes : ");
+    horasTrabajadasMes=lector.nextDouble();
+
+    System.out.println("Ingrese los  kilometrajes recorridos en el mes : ");
+    kilometrajeRecorrido=lector.nextDouble();
+    /*
+     System.out.println("Ingrese la cantidad de accidentes que tuvo el conductor : " + i+1 );
+    cantidadAccidentes=lector.nextInt();
+    if (cantidadAccidentes ==0) {
+        saldoBonificacion=50;
+        System.out.println("FELICITACIONES ,USTED ES UN EXCELENTE CONDUCTOR !!");
+    }
+
+    System.out.println("Ingrese su sueldo base " );
+    sueldoBase =lector.nextDouble();
+
+    System.out.println("Ingrese su zona de distribucion ");
+    
+
+    Conductores prueba1= new Conductores(nombre, codigoEmpleado, horasTrabajadasMes, kilometrajeRecorrido, sueldoBase);*/
+
+}
 
      }
 
