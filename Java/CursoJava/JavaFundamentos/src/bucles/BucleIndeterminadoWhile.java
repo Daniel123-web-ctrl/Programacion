@@ -437,8 +437,7 @@ while (!valido) {
         do{
             
             System.out.println("ingrese dos");
-         
-
+        
 
         }while(!salir);
 

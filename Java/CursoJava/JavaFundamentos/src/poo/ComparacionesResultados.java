@@ -1,10 +1,9 @@
+package poo;
 
-import javax.print.DocFlavor.STRING;
 
 public class ComparacionesResultados {
     
-private Guerrero guerrero1;
-private Mago mago1;
+
 private Videojuegos juego1;
 private Videojuegos juego2;
 public ComparacionesResultados(Videojuegos juego1,Videojuegos juego2){
@@ -42,11 +41,5 @@ public String mostrarGanador(){
 
 }
 }
-        /*if (mago1.calcularDanioTotal()>guerrero1.calcularDanioTotal()) {
-            return"El ganador es el  mago" ;
-        }else{
-           return "El ganador es el guerrero" ;
-        }
-        }*/
-
+       
 
