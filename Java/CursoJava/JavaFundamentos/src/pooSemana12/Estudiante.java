@@ -12,11 +12,11 @@ public class Estudiante {
     public Estudiante() {
 
         codigo = "u25247183";
-        nombre = "Juan Carlos";
+        nombre = "jose david";
         carrera = "Ing. de Software";
         ciclo = 3;
         promedio = 19.5;
-        becado = false;
+        becado = true;
     }
 
     public String getCodigo() {

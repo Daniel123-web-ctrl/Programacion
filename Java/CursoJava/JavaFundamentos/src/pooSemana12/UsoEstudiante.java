@@ -7,12 +7,16 @@ public class UsoEstudiante {
     public static void main(String[] args) {
 
         Estudiante estudiante1 = new Estudiante();
+       
+
+      
+
 
         try {
 
             PrintWriter archivo = new PrintWriter("reporte.html");
 
-            archivo.println("<!DOCTYPE html>");                                //es una declaración que le indica al navegador que el archivo que va a leer es un documento HTML."
+            archivo.println("<!DOCTYPE html>");                                
             archivo.println("<html>"); 
 
             archivo.println("<head>");
@@ -27,7 +31,7 @@ public class UsoEstudiante {
             archivo.println("<h1>REPORTE DEL ESTUDIANTE</h1>");
 
            
-            archivo.println("<img src='imagen.png' width='220px'><br><br>");
+            archivo.println("<img src='imagen.png' width='220'><br>");
 
            
 
