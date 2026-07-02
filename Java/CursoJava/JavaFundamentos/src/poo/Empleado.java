@@ -1,22 +1,18 @@
 package poo;
 
+import java.util.GregorianCalendar;
+
 public class Empleado {
 
-    private String codigo ;
-    private String nombre ;
-    private String cargo ;
-    private double horasTrabajadas ;
-    private double pagoPorHora ;
-    private boolean activo ;
     
-    public Empleado(String codigo,String nombre,String cargo,double horasTrabajadas,double pagoPorHora,boolean activo){
+    
+    public Empleado(String nom,double sueldo,int agno,int mes,int dia){
 
-        this.codigo=codigo;
-        this.nombre=nombre;
-        this.cargo=cargo;
-        this.horasTrabajadas=horasTrabajadas;
-        this.pagoPorHora=pagoPorHora;
-        this.activo=activo;
+        nombre=nom;
+        sueldo=sue;
+        GregorianCalendar calendario=new GregorianCalendar(agno,mes-1,dia);
+        altaContrata =calendario.getTime();
+        
         
 
     }
