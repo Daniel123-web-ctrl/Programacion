@@ -5,10 +5,13 @@ import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 
+import poosemana12.Estudiante;
+
 public class BucleIndeterminadoDoWhile {
     static final int  NOTAS=3; 
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
+        Estudiante estudiante1=new Estudiante();
         ejercicio21(lector);
 
     }public static void  ejercicio23(Scanner lector){
