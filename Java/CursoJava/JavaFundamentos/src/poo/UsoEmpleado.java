@@ -23,7 +23,7 @@ public class UsoEmpleado {
 					e.getAltaContrato(),e.getAltaContrato(),e.getAltaContrato());
 	}
 	}
-	
+}
 class Empleado {
 	public Empleado( String nom,double sue,int agno ,int mes ,int dia) {
 		
@@ -68,14 +68,31 @@ class Empleado {
 }
  class Jefatura extends Empleado{
 
-
-
      public Jefatura(String nom,double sue, int agno ,int mes, int dia){
 
-   super(nom,sue,agno,mes,dia);
-
-
+   super(nom,sue,agno,mes,dia);  // este llama al primer constructor de la clase padre (Empleado)
 
  }
+    public Jefatura (String nom){
+        super(nom);     // aqui este llama al segundo constructor de la clase padre (Empleado)
+    }
+
+
+ private double incentivo;
+
+
+ public double getIncentivo() {
+    return incentivo;
  }
- 
+ public void setIncentivo(double incentivo) {
+    this.incentivo = incentivo;
+ }
+
+ public double getSueldo(){
+    double sueldoJefe=super.getSueldo(); // aqui llamo al get sueldo de  la clase padre(mas arriba) por eso uso el super y eso sabemos que devuelve sueldo
+                                 // luego le dices que sueldo jefe es igual al sueldo del empleado y luego
+
+    return sueldoJefe + incentivo;  // con el return devuelves el sueldo del jefe mas el incentivo
+ }
+
+}

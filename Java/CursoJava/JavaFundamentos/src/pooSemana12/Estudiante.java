@@ -9,7 +9,7 @@ public class Estudiante {
     private double promedio;
     private boolean becado;
 
-    public Estudiante() {
+    public Estudiante(   ) {
 
         codigo = "u25247183";
         nombre = "jose david";
@@ -18,10 +18,10 @@ public class Estudiante {
         promedio = 19.5;
         becado = true;
     }
-
-    public String getCodigo() {
+ public String getCodigo() {
         return codigo;
     }
+
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;

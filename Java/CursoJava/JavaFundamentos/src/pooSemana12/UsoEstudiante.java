@@ -6,13 +6,11 @@ public class UsoEstudiante {
 
     public static void main(String[] args) {
 
-        Estudiante estudiante1 = new Estudiante();
-       
-
+Estudiante estudiante1 = new Estudiante();
+        
       
 
-
-        try {
+      try {
 
             PrintWriter archivo = new PrintWriter("reporte.html");
 
