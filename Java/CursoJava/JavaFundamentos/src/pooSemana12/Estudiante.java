@@ -9,7 +9,7 @@ public class Estudiante {
     private double promedio;
     private boolean becado;
 
-    public Estudiante(    ) {
+    public Estudiante(     ) {
 
         codigo = "u25247183";
         nombre = "jose david";
