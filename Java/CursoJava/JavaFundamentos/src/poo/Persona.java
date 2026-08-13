@@ -1,15 +1,18 @@
 package poo;
 
 public class Persona {
+  
   private String nombre;
   private int edad;
 
-  public Persona (String nombre,int edad){
-    
+public Persona(String nombre,int edad){
+  this.nombre=nombre;
+  this.edad=edad;
 
-    this.nombre=nombre;
-    this.edad=edad;
-  }
+
+}
+
+
 
 
 
@@ -26,8 +29,5 @@ public class Persona {
   public void setEdad(int edad) {
     this.edad = edad;
   }
-
-  
-  
 
 }
