@@ -96,3 +96,30 @@ class Empleado {
  }
 
 }
+
+
+
+
+
+public class Animal {
+
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido");
+    }
+}
+
+public class Perro extends Animal {
+
+    @Override
+    public void hacerSonido() {
+        System.out.println("El perro ladra");
+    }
+}
+
+public class Gato extends Animal {
+
+    @Override
+    public void hacerSonido() {
+        System.out.println("El gato maulla");
+    }
+}

@@ -7,7 +7,7 @@ public class Estudiante {
     private String carrera;
     private int ciclo;
     private double promedio;
-    private boolean becado;
+    private boolean becado;                   
 
     public Estudiante(     ) {
 
@@ -18,15 +18,13 @@ public class Estudiante {
         promedio = 19.5;
         becado = true;
     }
- public String getCodigo() {
+    
+    public String getCodigo() {
         return codigo;
     }
-
-
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-
     public String getNombre() {
         return nombre;
     }
