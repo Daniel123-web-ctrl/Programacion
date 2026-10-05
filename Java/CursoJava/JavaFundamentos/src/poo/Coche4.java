@@ -13,7 +13,8 @@ public class Coche4 { // esta clase se llama coche 4
     private double precioBase;
     private double precio;
 
-    public Coche4() {
+    public Coche4(double ancho) {
+        this.ancho=ancho;
         ruedas = 4;
         Color = "gris";
         pesoBase= 1350.25;
@@ -114,7 +115,7 @@ public class Coche4 { // esta clase se llama coche 4
         this.alto = alto;
     }
 
-    public double getPeso() {
+    public  double getPeso() {
         return peso;
     }
 

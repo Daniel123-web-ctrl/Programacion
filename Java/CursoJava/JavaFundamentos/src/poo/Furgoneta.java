@@ -8,7 +8,7 @@ public class Furgoneta extends Coche4{  // aqui dispones de todo aquello que es 
 
     public Furgoneta(int plazaExtra,int capacidadCarga){ 
 
-        super(); // este llama al constructor de la clase padre en este caso llama al constructor de Coche4
+        super(capacidadCarga); // este llama al constructor de la clase padre en este caso llama al constructor de Coche4 que vendria a ser la clase padre
 
 
         this.plazaExtra=plazaExtra;
@@ -17,7 +17,7 @@ public class Furgoneta extends Coche4{  // aqui dispones de todo aquello que es 
     }
 
 public String getDatosFurgoneta(){
-    return "La capacidad de carga es "+capacidadCarga +" y las plazas extras son "+ plazaExtra;
+    return "La capacidad de carga es " + capacidadCarga +" y las plazas extras son " + plazaExtra;
 }
 
 
