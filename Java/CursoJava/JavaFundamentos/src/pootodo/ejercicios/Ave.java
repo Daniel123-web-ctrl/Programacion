@@ -1,4 +1,4 @@
-package  poo.ejercicios;
+package  pootodo.ejercicios;
 public class Ave extends Animales {
     private String especie;
 

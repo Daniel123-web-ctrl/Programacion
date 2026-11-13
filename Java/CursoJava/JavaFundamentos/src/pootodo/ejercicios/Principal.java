@@ -1,6 +1,4 @@
-package poo.ejercicios;
-
-import poo.Time;
+package pootodo.ejercicios.utilidades;
 
 public class Principal {
 

@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 
 
@@ -32,7 +32,7 @@ public class PrestamoBibliotecaUniversitaria {
 
         copiasDisponibles[0] = 3;
         copiasDisponibles[1] = 0;
-            copiasDisponibles[2] = 5
+        copiasDisponibles[2] = 5;
         copiasDisponibles[3] = 2;
 
         System.out.println("########################################");

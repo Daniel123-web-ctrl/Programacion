@@ -1,6 +1,4 @@
-package poo.ejercicios;
-
-import poo.Empleado;
+package pootodo.ejercicios;
 
 public class MainEmpleado {
 

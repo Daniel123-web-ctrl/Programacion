@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -27,7 +27,6 @@ public  Empleado(String nom){
 public  Empleado(String nom  ,double sue){
 
 }
-
 
 public String getNombre() {
     return nombre;

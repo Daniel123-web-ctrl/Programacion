@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios.animales;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.NoSuchElementException;

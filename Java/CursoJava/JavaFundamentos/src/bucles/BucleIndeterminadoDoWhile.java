@@ -13,6 +13,7 @@ public class BucleIndeterminadoDoWhile {
         Scanner lector = new Scanner(System.in);
         Estudiante estudiante1=new Estudiante();
         ejercicio21(lector);
+        estudiante1.setNombre("Juan");
 
     }public static void  ejercicio23(Scanner lector){
 /*Implementar 5 programas en Java para:

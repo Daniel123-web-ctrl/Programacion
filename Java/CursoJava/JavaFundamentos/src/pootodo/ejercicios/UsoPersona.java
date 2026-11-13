@@ -1,9 +1,9 @@
 
-package poo.ejercicios;
+package pootodo.ejercicios.personas;
 
-import poo.Time;
+import pootodo.ejercicios.utilidades.Time;
 
-public class Principal {
+public class UsoPersona {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 public class Furgoneta extends Coche4{  // aqui dispones de todo aquello que es  public de la clase Coche
 
@@ -8,7 +8,7 @@ public class Furgoneta extends Coche4{  // aqui dispones de todo aquello que es 
 
     public Furgoneta(int plazaExtra,int capacidadCarga){ 
 
-        super(capacidadCarga); // este llama al constructor de la clase padre en este caso llama al constructor de Coche4 que vendria a ser la clase padre
+        super(); // este llama al constructor de la clase padre en este caso llama al constructor de Coche4 que vendria a ser la clase padre
 
 
         this.plazaExtra=plazaExtra;

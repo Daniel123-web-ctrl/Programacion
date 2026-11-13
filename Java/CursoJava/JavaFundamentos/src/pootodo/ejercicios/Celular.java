@@ -1,6 +1,4 @@
-package poo.ejercicios;
-
-import poo.Dispositivo;
+package pootodo.ejercicios.dispositivos;
 
 public class Celular extends Dispositivo {
 

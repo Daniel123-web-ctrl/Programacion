@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 public class Perro extends Animales {
     private String raza;
 

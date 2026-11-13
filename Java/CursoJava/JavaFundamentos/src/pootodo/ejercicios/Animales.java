@@ -1,5 +1,5 @@
 
-package poogeneral.ejercicios;
+package pootodo.ejercicios.animales;
 public abstract class Animales {
 
     private String nombre;

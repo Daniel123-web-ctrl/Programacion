@@ -1,5 +1,5 @@
 
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 public class Coche4 { // esta clase se llama coche 4 
     private double ancho;
@@ -13,7 +13,7 @@ public class Coche4 { // esta clase se llama coche 4
     private double precioBase;
     private double precio;
 
-    public Coche4(double ancho) {
+    public Coche4() {
         this.ancho=ancho;
         ruedas = 4;
         Color = "gris";
@@ -23,6 +23,14 @@ public class Coche4 { // esta clase se llama coche 4
         precio=precioBase;
 
         
+    }
+
+    public double getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(double ancho) {
+        this.ancho = ancho;
     }
 
     public String isClimatizador() {
@@ -99,13 +107,7 @@ public class Coche4 { // esta clase se llama coche 4
         setPeso(peso);
     }
 
-    public double getAncho() {
-        return ancho;
-    }
-
-    public void setAncho(double ancho) {
-        this.ancho = ancho;
-    }
+   
 
     public double getAlto() {
         return alto;

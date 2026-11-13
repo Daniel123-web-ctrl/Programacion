@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 import javax.swing.*;
 import java.awt.*;

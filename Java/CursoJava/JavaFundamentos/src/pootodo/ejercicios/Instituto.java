@@ -1,2 +1,2 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 

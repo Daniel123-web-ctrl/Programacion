@@ -1,6 +1,6 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
-public class Estudiante  extends Persona{
+public class Estudiante  extends Persona {
 
 
     private final String codigo;

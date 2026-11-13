@@ -1,13 +1,10 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 public class PatasFelices {
  
      public static void main(String[] args) {
         
-        // =====================================================
         // A) CUATRO ARREGLOS PARALELOS
         // Mismo índice = mismo producto
-        // =====================================================
-
         int[] codigos = {
             301, 302, 303, 304, 305,
             306, 307, 308, 309, 310
@@ -36,13 +33,10 @@ public class PatasFelices {
             80, 35, 27, 18, 45
         };
 
-
         // =====================================================
         // B) ORDENAR LOS PRODUCTOS POR CÓDIGO
         // =====================================================
-
         ordenSeleccionPorCodigo(codigos, nombres, precios, stocks);
-
 
         // Mostrar productos ordenados
         System.out.println("===== PRODUCTOS ORDENADOS POR CÓDIGO =====");

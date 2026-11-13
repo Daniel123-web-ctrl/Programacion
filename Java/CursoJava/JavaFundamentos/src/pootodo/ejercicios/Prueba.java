@@ -1,9 +1,6 @@
-package poo.ejercicios;
+package pootodo.ejercicios.animales;
 
 import java.util.*;
-
-import poo.Gato;
-import poo.Perro;
 
 public class Prueba {
     public static void main(String[] args) {

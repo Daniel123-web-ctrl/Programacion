@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios.productos;
 public class Producto {
 
     private String codigo;

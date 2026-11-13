@@ -1,11 +1,11 @@
-package poo.ejercicios;
+package pootodo.ejercicios;
 
 public class UsoVehiculoss {
 
     public static void main(String[] args) {
         
 
-        Coche4 lamborguini=new Coche4(0); // instancia o tambien podemos  llamarlo que se creo un objeto 
+        Coche4 lamborguini=new Coche4(); // instancia o tambien podemos  llamarlo que se creo un objeto 
         Furgoneta ferrary  =new  Furgoneta(23, 3);
         //Al crear un objeto de la clase Furgoneta y como este hereda de la clase coche ,automaticamente tambien hereda los metods que tiene  la clase coche
         
@@ -23,12 +23,9 @@ public class UsoVehiculoss {
         ferrary.setAsientosDeCuero("si");
          ferrary.setClimatizador("si");
          ferrary.setAlto(23);
-       
-       
-       
-       System.out.printf("el auto tiene una altura de %.2f  metros",ferrary.getAlto());
-        
-
+    
+       System.out.printf("El auto tiene una altura de %.2f  metros \n",ferrary.getAlto());
+    System.out.println(ferrary.getDatosFurgoneta());
 
     }
 }

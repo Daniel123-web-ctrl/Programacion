@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios.productos;
 public class UsoProducto {
     public static void main(String[] args) {
         Producto producto1=new Producto("123", "Laptop", 1000);

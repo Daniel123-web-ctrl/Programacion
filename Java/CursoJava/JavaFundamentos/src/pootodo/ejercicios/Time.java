@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package pootodo.ejercicios.utilidades;
 
 public class Time {
     private int second = 0;
